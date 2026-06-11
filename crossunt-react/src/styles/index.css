@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+/* Global settings */
+:root {
+    scroll-behavior: smooth;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+}
+
+html,
+body{
+    width: 100%;
+    min-width: 320px;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* Default link styling */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove ugly default button styles */
+button{
+    border: none;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Typography utility classes */
+.font-1{
+    color: #F1B862;
+    font-size: 2.8rem;
+    -webkit-text-stroke: 10px #985943;
+    paint-order: stroke fill;
+}
+
+.font-2{
+    font-size: 3.3rem;
+    font-family: 'Kalam', sans-serif !important;
+    text-shadow: 
+        5px 9px 7px rgba(39, 39, 39, 0.7),
+        0 4px 10px rgba(39, 39, 39, 0.5);
+}
