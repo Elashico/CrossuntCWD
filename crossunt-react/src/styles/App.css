@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+.font-1{
+    color: #F1B862;
+    font-size: 2.8rem;
+    -webkit-text-stroke: 10px #985943;
+    paint-order: stroke fill;
+}
+.font-2{
+    font-size: 3.3rem;
+    font-family: 'Kalam', sans-serif !important;
+    text-shadow: 
+        5px 9px 7px rgba(39, 39, 39, 0.7), /* Vertical shadow (blurred) */
+        0 4px 10px rgba(39, 39, 39, 0.5); /* More blur for the shadow */
+}

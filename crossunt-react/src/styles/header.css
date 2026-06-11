@@ -1,0 +1,123 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 1% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF6DD; 
+    transition: 0.5s;
+    z-index: 10;
+}
+header a img{
+    width: 50px;
+    height: auto;
+}
+header nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+header nav a{
+    font-size: 1.5rem;
+    color: #985943;
+    text-decoration: none;
+    padding: 3px 50px;
+    border-radius: 37px;
+    justify-content: space-between;
+}
+header nav a:hover{
+    background-color: #F1B862;
+    color: #ffffff;
+}
+
+/* Menu button (hidden on large screens) */
+.menu-btn{
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu-btn .hamburger{
+    width: 29px;
+    height: 2px;
+    background-color: #985943;
+    display: block;
+    position: relative;
+}
+.menu-btn .hamburger::before,
+.menu-btn .hamburger::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 29.2px;
+    height: 2px;
+    background-color: #985943;
+    cursor: pointer;
+}
+.menu-btn .hamburger::before{ top: -8px }
+.menu-btn .hamburger::after{ top: 8px }
+
+/* Responsive: stack and toggle nav on small screens */
+@media (max-width: 800px){
+    header{
+        padding: 1% 5%;
+        height: auto;
+    }
+    header nav{
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        right: 0;
+        background-color: #FFF6DD;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 0 18px 0;
+    }
+    header nav.open{
+        display: flex;
+    }
+    header nav a{
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+        border-radius: 0;
+    }
+    .menu-btn{
+        display: block;
+    }
+    header nav{
+        justify-content: flex-start;
+    }
+
+/* button behavior on small screens: make it full width and stack vertically */ */
+    button { 
+        border-radius: 8px;
+        border: 1px solid transparent;
+        padding: 0.6em 1.2em;
+        font-size: 1em;
+        font-weight: 500; 
+        font-family: inherit; 
+        background-color: #1a1a1a; 
+        cursor: pointer; 
+        transition: border-color 0.25s; } 
+    
+    button:hover { border-color: #646cff; } 
+    button:focus, button:focus-visible { 
+        outline: 4px auto -webkit-focus-ring-color; } 
+    
+    @media (prefers-color-scheme: light) { 
+        :root { 
+            color: #213547; 
+            background-color: #ffffff; } 
+        a:hover { 
+            color: #747bff; } 
+        button { 
+            background-color: #f9f9f9; } }
+}
